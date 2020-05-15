@@ -95,17 +95,11 @@ https://api.douban.com
 
 
 
-## Star
+## ★Star
 
- 
+ 如果你有好的意见或建议，欢迎给我们提 [issue](https://github.com/Tzlibai/uni-app-video/issues) ，为优化此项目贡献力量。
 
 **开源不易，致敬不断奋斗在开源路上的人。如果本仓库对您有帮助，请在最上方点亮您的Star，谢谢您！**
-
-
-
-## 贡献
-
-如果你有好的意见或建议，欢迎给我们提 [issue](https://github.com/Tzlibai/uni-app-video/issues) ，为优化此项目贡献力量。
 
 
 
