@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "mi-loading": "/components/mi-loading/mi-loading",
+    "uni-rate": "/components/uni-rate/uni-rate"
+  }
+}

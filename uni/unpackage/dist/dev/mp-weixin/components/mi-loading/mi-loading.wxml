@@ -1,0 +1,1 @@
+<block wx:if="{{isShow}}"><view class="{{['show-loading-con',(hasMask)?'mask':'']}}"><view class="content"><image src="/static/img/loading.gif" mode></image><view class="title">{{title}}</view></view></view></block>

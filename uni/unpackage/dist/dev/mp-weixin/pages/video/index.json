@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "电影详情",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "mi-loading": "/components/mi-loading/mi-loading",
+    "uni-fab": "/components/uni-fab/uni-fab"
+  }
+}

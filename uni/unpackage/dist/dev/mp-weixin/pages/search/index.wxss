@@ -1,0 +1,304 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 顶背景图 */
+.response.data-v-efca8224 {
+	width: 100%;
+}
+.topBar.data-v-efca8224 {
+	position: relative;
+}
+.cu-custom.data-v-efca8224 {
+	background-color: red
+}
+/* 搜索框 */
+.searchBox.data-v-efca8224 {
+	position: absolute;
+	left: 50%;
+	margin-left: -35%;
+	bottom: 140rpx;
+	width: 70%;
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+	color: #3499cd;
+	background-color: #FFFFFF;
+	border-radius: 10rpx;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 32rpx;
+}
+.button.data-v-efca8224 {
+	width: 20%;
+	position: relative;
+	color: #FFFFFF;
+	background-color: #6C7CFD;
+}
+.search-t.data-v-efca8224 {
+	height: 80rpx;
+	padding: 0 40rpx 0 20rpx;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	text-align: left;
+}
+.t.data-v-efca8224 {
+	border-width: 16rpx;
+	border-style: solid;
+	border-color: transparent #6C7CFD transparent transparent;
+	position: absolute;
+	right: 100%;
+	top: 26rpx;
+}
+/* 电影列表 */
+@-webkit-keyframes masked-animation-data-v-efca8224 {
+0% {
+		background-position: 0 0
+}
+to {
+		background-position: -100% 0
+}
+}
+.movieH.data-v-efca8224 {
+	width: 94%;
+	margin: 0 auto;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-weight: 900;
+	color: #DD524D;
+	font-size: 36rpx;
+	background-image: -webkit-linear-gradient(left, #02ab6c, #DD524D 25%, #3499cd 50%, #DD524D 75%, #3499cd);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-background-size: 200% 100%;
+	-webkit-animation: masked-animation-data-v-efca8224 1s infinite linear;
+}
+.movieBox.data-v-efca8224 {
+	width: 94%;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.movieList.data-v-efca8224 {
+	/* height: 300rpx; */
+	width: 30%;
+}
+.movieImg.data-v-efca8224 {
+	height: 300rpx;
+	border-radius: 15rpx;
+}
+.moiveRate.data-v-efca8224 {
+	height: 20rpx;
+	line-height: 20rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-bottom: 15rpx;
+}
+.moiveRateT.data-v-efca8224 {
+	margin-right: 4rpx;
+}
+

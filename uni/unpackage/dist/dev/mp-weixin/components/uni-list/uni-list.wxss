@@ -1,0 +1,29 @@
+
+.uni-list.data-v-466e04a4 {
+
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+
+		background-color: #ffffff;
+		position: relative;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		/* border-bottom-color: $uni-border-color;
+ */
+		/* border-bottom-style: solid;
+ */
+		/* border-bottom-width: 1px;
+ */
+}
+.uni-list.data-v-466e04a4:before {
+		height: 0;
+}
+.uni-list.data-v-466e04a4:after {
+		height: 0;
+}
+
+
+

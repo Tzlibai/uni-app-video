@@ -1,0 +1,425 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 文字遮罩 */
+.textMark.data-v-81e41b52 {
+	margin-top: 20rpx;
+	border-radius: 80rpx 80rpx 14rpx 14rpx;
+	background-color: rgba(0, 0, 0, .2);
+}
+.detailBox.data-v-81e41b52 {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.detailBgMax.data-v-81e41b52 {
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.detailBg.data-v-81e41b52 {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	-webkit-filter: blur(60rpx);
+	        filter: blur(60rpx);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+/* 导航tab */
+.tarbar.data-v-81e41b52 {
+	font-weight: 700 !important;
+	color: #fff !important;
+}
+/* 大图 */
+.bigImgBox.data-v-81e41b52 {
+	height: 700rpx;
+	/* background: pink; */
+	-webkit-transition: 1s;
+	transition: 1s;
+	text-align: center;
+}
+/* 滚动视图窗口 */
+.scrollBox.data-v-81e41b52 {}
+/* 图片从上至下动画 */
+@-webkit-keyframes mymove-data-v-81e41b52 {
+0% {
+		margin-top: -200px
+}
+100% {
+		margin-top: 50px
+}
+}
+@keyframes mymove-data-v-81e41b52 {
+0% {
+		margin-top: -200px
+}
+100% {
+		margin-top: 50px
+}
+}
+.bigImg.data-v-81e41b52 {
+	width: 440rpx;
+	height: 600rpx;
+	margin-top: 50px;
+	border-radius: 10rpx;
+	-webkit-animation: mymove-data-v-81e41b52 0.8s cubic-bezier(.41, -0.6, .68, .81) 1;
+	        animation: mymove-data-v-81e41b52 0.8s cubic-bezier(.41, -0.6, .68, .81) 1;
+	/* -moz-box-shadow: 1px 1px 1px #dddddd;
+	-webkit-box-shadow: 1px 1px 1px #dddddd;
+	box-shadow: 1px 1px 1px #dddddd; */
+}
+.bigtitleBox.data-v-81e41b52 {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 80rpx;
+	font-weight: 700;
+	color: #F7F7F7;
+}
+.textSty.data-v-81e41b52 {
+	width: 90%;
+	margin: 0 auto;
+}
+/* 剧情简介 */
+.summarybox.data-v-81e41b52 {
+	width: 90%;
+	margin: 40rpx auto 0;
+	line-height: 60rpx;
+	font-size: 40rpx;
+	color: #EDE1D9;
+	font-weight: 700;
+}
+/* 标题设置 */
+.hTitle.data-v-81e41b52 {
+	font-size: 40rpx;
+	color: #EDE1D9;
+	font-weight: 700;
+	margin-left: 3%;
+}
+/* 演职员设置 */
+.castsBox.data-v-81e41b52 {
+	width: 90%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin: 30rpx auto 0;
+	overflow: auto;
+}
+.castsBox-li.data-v-81e41b52 {
+	margin-right: 30rpx;
+	text-align: center;
+}
+.castsBox-li ._img.data-v-81e41b52 {
+	width: 200rpx;
+	height: 260rpx;
+	border-radius: 10rpx;
+}
+.summary.data-v-81e41b52 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 30rpx;
+	line-height: 40rpx;
+	margin-top: 20rpx;
+	/* max-height: 160upx; */
+}
+.summaryColor.data-v-81e41b52 {
+	color: #D3BBA7;
+}
+.summaryVColor.data-v-81e41b52 {
+	color: #fff;
+	font-weight: 700;
+}
+/* 视频设置 */
+@-webkit-keyframes masked-animation-data-v-81e41b52 {
+0% {
+		background-position: 0 0
+}
+to {
+		background-position: -100% 0
+}
+}
+.videoUrl.data-v-81e41b52 {
+	margin-top: 30rpx;
+}
+.play.data-v-81e41b52 {
+	color: #FFFFFF;
+	font-size: 50rpx;
+	font-weight: 700;
+	line-height: 140rpx;
+	text-align: center;
+	background-image: -webkit-linear-gradient(left, #02ab6c, #DD524D 25%, #3499cd 50%, #DD524D 75%, #3499cd);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-background-size: 200% 100%;
+	-webkit-animation: masked-animation-data-v-81e41b52 1s infinite linear;
+}
+

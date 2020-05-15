@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///G:/dev/uni/uni/main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA,wCAAmB;AACnB;AACA,+F;AACAA,UAAU,CAACC,eAAD,CAAV,C","file":"pages/detail/detail.js","sourcesContent":["import 'uni-pages';import '@dcloudio/uni-stat';\nimport Vue from 'vue'\nimport Page from './pages/detail/detail.vue'\ncreatePage(Page)"],"sourceRoot":""}

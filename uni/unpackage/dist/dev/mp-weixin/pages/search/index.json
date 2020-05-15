@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "mi-loading": "/components/mi-loading/mi-loading",
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "uni-list": "/components/uni-list/uni-list",
+    "uni-list-item": "/components/uni-list-item/uni-list-item"
+  }
+}

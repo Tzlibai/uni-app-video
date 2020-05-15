@@ -1,0 +1,34 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "uni-ui基础项目"
+		}
+	},
+	{
+		"path": "pages/detail/index",
+		"style": {
+			"navigationBarTitleText": "详情"
+		}
+	},
+	{
+		"path": "pages/video/index",
+		"style": {
+			"navigationBarTitleText": "电影详情"
+		}
+	},
+	{
+		"path": "pages/search/index",
+		"style": {
+			"navigationBarTitleText": "搜索"
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	}
+}
