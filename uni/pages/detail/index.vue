@@ -76,11 +76,6 @@
 						<view style="font-size: 30rpx;color: #b7acac;text-align: right;margin-bottom: 8rpx">{{ item.created_at }}</view>
 					</view>
 				</view>
-				
-				<!-- #ifdef APP-PLUS -->
-				<view @click="getVideo" v-if="summarStatu" class="play">{{ isVideosLook ? '点击全片播放' : '暂无可播放片源'}}</view>
-				<!-- #endif -->
-				
 			</view>
 		</scroll-view>
 		<!--        分割线-->
@@ -235,29 +230,7 @@
 		methods: {
 			toggleDescription(num) {
 				this.showText = !this.showText
-			},
-			// #ifdef APP-PLUS
-			getVideo(item) {
-				if (!this.isVideosLook) {
-					return
-				}
-				console.log(this.movieUrl, 'this.movieUrl')
-				console.log(this.viewTitle, 'this.viewTitle')
-				uni.setStorage({
-					key: 'title',
-					data: this.viewTitle,
-					success: function() {
-						console.log('item.images.small');
-					}
-				})
-				uni.navigateTo({
-					url: '../video/index?type=' + this.movieUrl,
-					animationType: 'pop-in',
-					animationDuration: 200
-				})
 			}
-
-			// #endif
 		},
 	}
 </script>

@@ -12,12 +12,6 @@
 		}
 	},
 	{
-		"path": "pages/video/index",
-		"style": {
-			"navigationBarTitleText": "电影详情"
-		}
-	},
-	{
 		"path": "pages/search/index",
 		"style": {
 			"navigationBarTitleText": "搜索"

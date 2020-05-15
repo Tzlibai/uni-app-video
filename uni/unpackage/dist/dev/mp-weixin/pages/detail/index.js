@@ -94,10 +94,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   "mi-loading": function() {
-    return __webpack_require__.e(/*! import() | components/mi-loading/mi-loading */ "components/mi-loading/mi-loading").then(__webpack_require__.bind(null, /*! @/components/mi-loading/mi-loading.vue */ 52))
+    return __webpack_require__.e(/*! import() | components/mi-loading/mi-loading */ "components/mi-loading/mi-loading").then(__webpack_require__.bind(null, /*! @/components/mi-loading/mi-loading.vue */ 44))
   },
   "uni-rate": function() {
-    return __webpack_require__.e(/*! import() | components/uni-rate/uni-rate */ "components/uni-rate/uni-rate").then(__webpack_require__.bind(null, /*! @/components/uni-rate/uni-rate.vue */ 59))
+    return __webpack_require__.e(/*! import() | components/uni-rate/uni-rate */ "components/uni-rate/uni-rate").then(__webpack_require__.bind(null, /*! @/components/uni-rate/uni-rate.vue */ 51))
   }
 }
 var render = function() {
@@ -146,12 +146,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var miLoading = function miLoading() {__webpack_require__.e(/*! require.ensure | components/mi-loading/mi-loading */ "components/mi-loading/mi-loading").then((function () {return resolve(__webpack_require__(/*! ../../components/mi-loading/mi-loading.vue */ 52));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
-
-
-
-
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var miLoading = function miLoading() {__webpack_require__.e(/*! require.ensure | components/mi-loading/mi-loading */ "components/mi-loading/mi-loading").then((function () {return resolve(__webpack_require__(/*! ../../components/mi-loading/mi-loading.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 
