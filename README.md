@@ -91,7 +91,9 @@ https://api.douban.com
 
 ## 打包发布教程
 
-​		[打包发布教程文档]([https://uniapp.dcloud.net.cn/quickstart?id=%e5%8f%91%e5%b8%83uni-app](https://uniapp.dcloud.net.cn/quickstart?id=发布uni-app))
+​	**点击此处查看 [打包发布教程](https://uniapp.dcloud.net.cn/quickstart?id=%e5%8f%91%e5%b8%83uni-app)**
+
+
 
 ## 免责声明
 
