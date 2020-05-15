@@ -40,15 +40,15 @@
 
 
 
-	### 手摸手启动项目 ( 以小程序为例 )：
+### 手摸手启动项目 ( 以小程序为例 )：
 
-打开 **HBuilderX**导入项目：
+1.打开 **HBuilderX**导入项目：
 
 ![H5](http://www.zhaohongcheng.com:8100/github/improt.png)
 
 
 
-进入**manifest.json**文件中修改成自己的相关ID（如遇无法加载配置文件，重启编辑器即可）；
+2.进入**manifest.json**文件中修改成自己的相关ID（如遇无法加载配置文件，重启编辑器即可）；
 
 ![H5](http://www.zhaohongcheng.com:8100/github/main.png)
 
@@ -72,9 +72,9 @@
 
   
 
-- **小程序报错：*Failed to load media http://xxx.xx server responded with a status of 403**
+- **小程序报错：Failed to load media http://xxx.xx server responded with a status of 403**
 
-​	答：这是小程序电影详情页面的预告片视频报错（不影响可忽略此错误），并不是加载视频错误，而是微信开发者工具中加载视频会提示这个错误，所以在调试带有视频的控件时，可以点击真机预览小程序。
+  答：这是小程序电影详情页面的预告片视频报错（不影响可忽略此错误），并不是加载视频错误，而是微信开发者工具中加载视频会提示这个错误，所以在调试带有视频的控件时，可以点击真机预览小程序。
 
 
 
@@ -91,9 +91,7 @@ https://api.douban.com
 
 ## 打包发布教程
 
-​		[点击查看打包发布文档]([https://uniapp.dcloud.net.cn/quickstart?id=%e5%8f%91%e5%b8%83uni-app](https://uniapp.dcloud.net.cn/quickstart?id=发布uni-app))
-
-
+​		[打包发布教程文档]([https://uniapp.dcloud.net.cn/quickstart?id=%e5%8f%91%e5%b8%83uni-app](https://uniapp.dcloud.net.cn/quickstart?id=发布uni-app))
 
 ## 免责声明
 
