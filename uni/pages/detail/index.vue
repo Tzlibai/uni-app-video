@@ -166,10 +166,13 @@
 			// 获取电影详情信息
 			var id = option.id
 			uni.request({
-				url: 'https://douban.uieee.com/v2/movie/subject/' + id,
+				url: 'https://api.douban.com/v2/movie/subject/' + id,
 				method: 'GET',
 				header: {
 					"Content-Type": "application/text",
+				},
+				data: {
+					apikey: '0df993c66c0c636e29ecbb5344252a4a'
 				},
 				success: function(res) {
 					setTimeout(() => {

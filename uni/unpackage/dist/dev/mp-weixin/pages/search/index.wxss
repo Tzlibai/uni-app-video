@@ -191,17 +191,17 @@
 
 
 /* 顶背景图 */
-.response.data-v-efca8224 {
+.response.data-v-ce68bf42 {
 	width: 100%;
 }
-.topBar.data-v-efca8224 {
+.topBar.data-v-ce68bf42 {
 	position: relative;
 }
-.cu-custom.data-v-efca8224 {
+.cu-custom.data-v-ce68bf42 {
 	background-color: red
 }
 /* 搜索框 */
-.searchBox.data-v-efca8224 {
+.searchBox.data-v-ce68bf42 {
 	position: absolute;
 	left: 50%;
 	margin-left: -35%;
@@ -219,13 +219,13 @@
 	display: flex;
 	font-size: 32rpx;
 }
-.button.data-v-efca8224 {
+.button.data-v-ce68bf42 {
 	width: 20%;
 	position: relative;
 	color: #FFFFFF;
 	background-color: #6C7CFD;
 }
-.search-t.data-v-efca8224 {
+.search-t.data-v-ce68bf42 {
 	height: 80rpx;
 	padding: 0 40rpx 0 20rpx;
 	-webkit-box-flex: 1;
@@ -233,7 +233,7 @@
 	        flex: 1;
 	text-align: left;
 }
-.t.data-v-efca8224 {
+.t.data-v-ce68bf42 {
 	border-width: 16rpx;
 	border-style: solid;
 	border-color: transparent #6C7CFD transparent transparent;
@@ -242,7 +242,7 @@
 	top: 26rpx;
 }
 /* 电影列表 */
-@-webkit-keyframes masked-animation-data-v-efca8224 {
+@-webkit-keyframes masked-animation-data-v-ce68bf42 {
 0% {
 		background-position: 0 0
 }
@@ -250,7 +250,7 @@ to {
 		background-position: -100% 0
 }
 }
-.movieH.data-v-efca8224 {
+.movieH.data-v-ce68bf42 {
 	width: 94%;
 	margin: 0 auto;
 	height: 100rpx;
@@ -262,9 +262,9 @@ to {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	-webkit-background-size: 200% 100%;
-	-webkit-animation: masked-animation-data-v-efca8224 1s infinite linear;
+	-webkit-animation: masked-animation-data-v-ce68bf42 1s infinite linear;
 }
-.movieBox.data-v-efca8224 {
+.movieBox.data-v-ce68bf42 {
 	width: 94%;
 	margin: 0 auto;
 	display: -webkit-box;
@@ -276,15 +276,15 @@ to {
 	-webkit-flex-wrap: wrap;
 	        flex-wrap: wrap;
 }
-.movieList.data-v-efca8224 {
+.movieList.data-v-ce68bf42 {
 	/* height: 300rpx; */
 	width: 30%;
 }
-.movieImg.data-v-efca8224 {
+.movieImg.data-v-ce68bf42 {
 	height: 300rpx;
 	border-radius: 15rpx;
 }
-.moiveRate.data-v-efca8224 {
+.moiveRate.data-v-ce68bf42 {
 	height: 20rpx;
 	line-height: 20rpx;
 	display: -webkit-box;
@@ -298,7 +298,7 @@ to {
 	        align-items: center;
 	margin-bottom: 15rpx;
 }
-.moiveRateT.data-v-efca8224 {
+.moiveRateT.data-v-ce68bf42 {
 	margin-right: 4rpx;
 }
 

@@ -291,14 +291,14 @@
 
 
 /* 顶背景图 */
-.response.data-v-af24c83c {
+.response.data-v-14524851 {
 	width: 100%;
 }
-.topBar.data-v-af24c83c {
+.topBar.data-v-14524851 {
 	position: relative;
 }
 /* 搜索框 */
-.searchBox.data-v-af24c83c {
+.searchBox.data-v-14524851 {
 	position: absolute;
 	left: 50%;
 	margin-left: -30%;
@@ -315,19 +315,19 @@
 	display: -webkit-flex;
 	display: flex;
 }
-.button.data-v-af24c83c {
+.button.data-v-14524851 {
 	width: 20%;
 	position: relative;
 	color: #FFFFFF;
 	background-color: #6C7CFD;
 }
-.search-t.data-v-af24c83c {
+.search-t.data-v-14524851 {
 	line-height: 60rpx;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	        flex: 1;
 }
-.t.data-v-af24c83c {
+.t.data-v-14524851 {
 	border-width: 12rpx;
 	border-style: solid;
 	border-color: transparent #6C7CFD transparent transparent;
@@ -336,20 +336,20 @@
 	top: 18rpx;
 }
 /* 轮播图 */
-.swiper-item.data-v-af24c83c {
+.swiper-item.data-v-14524851 {
 	width: 80%;
 	
 	height: 100%;
 	margin: 0 auto;
 	border-radius: 20rpx 20rpx 0 0;
 }
-.swiper-img.data-v-af24c83c {
+.swiper-img.data-v-14524851 {
 	width: 100%;
 	height: 100%;
 	border-radius: 20rpx 20rpx 0 0;
 }
 /* 电影列表 */
-@-webkit-keyframes masked-animation-data-v-af24c83c {
+@-webkit-keyframes masked-animation-data-v-14524851 {
 0% {
 		background-position: 0 0
 }
@@ -357,7 +357,7 @@ to {
 		background-position: -100% 0
 }
 }
-.movieH.data-v-af24c83c {
+.movieH.data-v-14524851 {
 	width: 94%;
 	margin: 0 auto;
 	height: 100rpx;
@@ -369,9 +369,9 @@ to {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	-webkit-background-size: 200% 100%;
-	-webkit-animation: masked-animation-data-v-af24c83c 1s infinite linear;
+	-webkit-animation: masked-animation-data-v-14524851 1s infinite linear;
 }
-.movieBox.data-v-af24c83c {
+.movieBox.data-v-14524851 {
 	width: 94%;
 	margin: 0 auto;
 	display: -webkit-box;
@@ -383,15 +383,15 @@ to {
 	-webkit-flex-wrap: wrap;
 	        flex-wrap: wrap;
 }
-.movieList.data-v-af24c83c {
+.movieList.data-v-14524851 {
 	/* height: 300rpx; */
 	width: 30%;
 }
-.movieImg.data-v-af24c83c {
+.movieImg.data-v-14524851 {
 	height: 300rpx;
 	border-radius: 15rpx;
 }
-.moiveRate.data-v-af24c83c {
+.moiveRate.data-v-14524851 {
 	height: 40rpx;
 	line-height: 40rpx;
 	display: -webkit-box;
@@ -405,7 +405,7 @@ to {
 	        align-items: center;
 	margin-bottom: 15rpx;
 }
-.moiveRateT.data-v-af24c83c {
+.moiveRateT.data-v-14524851 {
 	margin-right: 4rpx;
 }
 
