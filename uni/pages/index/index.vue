@@ -207,7 +207,7 @@
 				}
 				that.listStatus = 'loading'
 				uni.request({
-					url: 'https://douban.uieee.com/v2/movie/top250',
+					url: 'https://api.douban.com/v2/movie/top250',
 					method: 'GET',
 					header: {
 						"Content-Type": "application/text",
@@ -220,7 +220,8 @@
 						sort: 'recommend',
 						count: 6,
 						start: that.pageNum * 6,
-						playable: 'on'
+						playable: 'on',
+						apikey: '0df993c66c0c636e29ecbb5344252a4a'
 					},
 					success: function(res) {
 						that.pageNum++;

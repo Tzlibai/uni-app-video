@@ -1,6 +1,6 @@
 {
     "name" : "Iron视频",
-    "appid" : "__UNI__B638190",
+    "appid" : "",
     "description" : "一款高质量的杂货铺",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -59,7 +59,7 @@
     },
     "quickapp" : {},
     "mp-weixin" : {
-        "appid" : "wx891ca953d2998350",
+        "appid" : "",
         "setting" : {
             "urlCheck" : true,
             "postcss" : true,
