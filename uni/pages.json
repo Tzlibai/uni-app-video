@@ -1,4 +1,5 @@
 {
+	// pages下设置页面的路径和标题
 	"pages": [{
 		"path": "pages/index/index",
 		"style": {
@@ -19,10 +20,10 @@
 	}
 	],
 	"globalStyle": {
-		"navigationStyle": "custom",
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#007AFF",
-		"backgroundColor": "#FFFFFF"
+		"navigationStyle": "custom", // custom为自定义模式
+		"navigationBarTextStyle": "white", // 标题文字设为白色
+		"navigationBarTitleText": "uni-app", // 标题名称
+		"navigationBarBackgroundColor": "#007AFF", // 更改导航背景色
+		"backgroundColor": "#FFFFFF" // 全局背景色
 	}
 }
