@@ -12,7 +12,7 @@
 		<scroll-view class="scrollBox">
 			<view :class="summarStatu ? 'textMark' : ''">
 				<view class="bigImgBox">
-					<image :src="viewBanner.small" class="bigImg"></image>
+					<image :src="viewBanner" class="bigImg"></image>
 				</view>
 				<view class="bigtitleBox">
 					<text v-if="summarStatu">{{ viewTitle }}</text>
@@ -41,80 +41,47 @@
 				<view class="castsBox">
 					<view v-for="(item, index) in directors" :key="item.id" class="castsBox-li">
 						<view>
-							<img :src="item.avatars.small" alt="导演">
-							<text class="summaryColor">{{ item.name }}</text>
-							<br>
+							<!-- <img :src="item.avatars.small" alt="导演"> -->
 							<text class="summaryVColor">导演</text>
+							<br>
+							<text class="summaryColor">{{ item }}</text>
+							<!-- <br> -->
 						</view>
 					</view>
 					<view v-for="(item, index) in casts" :key="index" class="castsBox-li">
 						<view>
-							<img :src="item.avatars.small" alt="演员">
-							<text class="summaryColor">{{ item.name }}</text>
-							<br>
+							<!-- <img :src="item.avatars.small" alt="演员"> -->
 							<text class="summaryVColor">演员</text>
+							<br>
+							<text class="summaryColor">{{ item }}</text>
 						</view>
 					</view>
 				</view>
 				<!--        评论-->
 				<view class="popular_comments" style="margin-top: 50rpx;">
-					<text class="hTitle" v-if="summarStatu">精选评论</text>
-					<view class="popular_comments-page" v-for="(item, index) in popular_comments" :key="index" style="width: 94%;margin: 14rpx auto;border-bottom: 1px solid rgba(204, 204, 204, .1);">
+					<text class="hTitle">精选评论</text>
+					<view class="popular_comments-page" style="width: 94%;margin: 14rpx auto;border-bottom: 1px solid rgba(204, 204, 204, .1);">
 						<view class="commentsPage-t" style="display: flex; height: 100rpx;align-items: center">
-							<img :src="item.author.avatar" alt="" style="width: 80rpx;height: 80rpx;border-radius: 40rpx;">
+							<img src="~@/static/avatar/1.jpg" style="width: 80rpx;height: 80rpx;border-radius: 20rpx;">
 							<view style="display: flex;flex-direction: column;justify-content: space-around;height: 100rpx;">
-								<text style="font-size: 30rpx;height: 30rpx;color: #fff;font-weight: 700;margin-left: 20rpx;">{{ item.author.name }}</text>
-								<view style="margin-left: 20rpx;height: 20rpx;">
+								<text style="font-size: 30rpx;height: 30rpx;color: #fff;font-weight: 700;margin-left: 20rpx;">{{ popular_comments.author }}</text>
+							<!-- 	<view style="margin-left: 20rpx;height: 20rpx;">
 									<uni-rate disabled="true" :value="item.rating.value/2" size=14 active-color="#ffd21e" color="#DADADA">
 									</uni-rate>
-								</view>
+								</view> -->
 							</view>
 						</view>
-						<view style="font-size: 30rpx;padding: 10rpx 0 10rpx 0;color: #fff;">
-							{{ item.content }}
+						<view style="font-size: 34rpx;padding: 10rpx 0 10rpx 0;color: #fff;">
+							{{ popular_comments.content }}
 						</view>
-						<view style="font-size: 30rpx;color: #b7acac;text-align: right;margin-bottom: 8rpx">{{ item.created_at }}</view>
+						<!-- <view style="font-size: 30rpx;color: #b7acac;text-align: right;margin-bottom: 8rpx">{{ item.created_at }}</view> -->
 					</view>
 				</view>
 			</view>
 		</scroll-view>
 		<!--        分割线-->
 		<!-- #ifdef MP-WEIXIN || MP-BAIDU -->
-		<view style="width: 98%;margin: 0 auto;" v-if="trailersState">
-				<view  v-if="summarStatu" style="height: 100rpx;display: flex;align-items: center;color: #007AFF;z-index: 2;font-size: 40rpx;color: #EDE1D9;font-weight: 700;argin-left: 3%;;position: relative;">
-					预告片 / 剧照
-					<text></text>
-				</view>
-			<!-- <img src="http://img.zcool.cn/community/01e858594b2e58a8012193a3da10db.gif" alt="" style="width: 100%; height: 130rpx"> -->
-			<view class="functionaryJob" style="height: 340rpx;display: flex;overflow: auto;">
-				<view class="directors" style="display: flex;width: auto;	" v-for="item of trailers" :key="item.id">
-					<view style="width:340rpx;height: 192rpx;position: relative; margin-right: 18rpx;">
-						<video controls :poster='item.medium' :src="item.resource_url" style="width:340rpx;height: 192rpx;border-radius: 14rpx 14rpx 0 0;">
-						</video>
-
-						<view style="display: flex;align-items: center;justify-content: center;width: 340rpx;height: 80rpx;line-height: 40rpx;background-color: #222;color: #fff;position: absolute;bottom: -80rpx;font-size: 30rpx;border-radius: 0 0 14rpx 14rpx;text-align: center;">
-							<text>{{ item.title }}</text>
-						</view>
-						</view>
-					</view>
-					<view class="directors" style="display: flex;width: auto;	" v-for="item of photos" :key="item.id">
-						<view style="width:250rpx;height: 192rpx;position: relative; margin-right: 20rpx;">
-							<image  :src="item.cover" style="width:250rpx;height: 272rpx;border-radius: 10rpx">
-							</image>
-					
-							<!-- <view style="display: flex;align-items: center;justify-content: center;width: 340rpx;height: 80rpx;line-height: 40rpx;background-color: #222;color: #fff;position: absolute;bottom: -80rpx;font-size: 30rpx;border-radius: 0 0 14rpx 14rpx;text-align: center;">
-								<text>剧照</text>
-							</view> -->
-							</view>
-						</view>
-					</view>
-				</view>
-
-				
-
-			</view>
-
-		</view>
+		<!-- 接口失效预告片与剧照暂时删除 -->
 		<!-- #endif -->
 	</view>
 </template>
@@ -166,7 +133,7 @@
 			// 获取电影详情信息
 			var id = option.id
 			uni.request({
-				url: 'https://api.douban.com/v2/movie/subject/' + id,
+				url: 'https://movie.douban.com/j/subject_abstract?subject_id=' + id,
 				method: 'GET',
 				header: {
 					"Content-Type": "application/text",
@@ -178,32 +145,35 @@
 					setTimeout(() => {
 						that.$refs.loading.hide() // 关闭
 					}, 10)
-					that.info = res.data
+					res.data = res.data.subject
+					that.info = res.data.subject
 					console.log(res.data)
-					that.viewBanner = res.data.images //电影封面
-					that.genres = res.data.genres[0] + ' / ' //电影类型
-					that.countries = res.data.countries[0] + ' / ' // 上映国家
-					that.pubdates = (res.data.pubdates[0] ? res.data.pubdates[0] : res.data.pubdates) + ' / ' // 上映时间
-					that.durations = '片长: ' + res.data.durations[0] ? res.data.durations[0] : res.data.durations // 片长
-					that.summary = res.data.summary // 剧情简介
+					that.viewBanner = that.viewBg //电影封面
+					that.genres = res.data.types[0] + ' / ' //电影类型
+					that.countries = res.data.region + ' / ' // 上映国家
+					that.pubdates = res.data.release_year + ' / ' // 上映时间
+					that.durations = '片长: ' + res.data.duration // 片长
+					that.summary = res.data.short_comment.content // 剧情简介
 					that.directors = res.data.directors // 导演
-					that.casts = res.data.casts // 演员
+					that.casts = res.data.actors // 演员
 					// #ifdef MP-WEIXIN || MP-BAIDU 
-					that.photos = res.data.photos // 剧照
-					that.trailers = res.data.trailers // 预告片
-					if(that.trailers.length < 1) {
-						that.trailersState = false
-					}
+					// that.photos = res.data.photos // 剧照
+					// that.trailers = res.data.trailers // 预告片
+					// if(that.trailers.length < 1) {
+					// 	that.trailersState = false
+					// }
 					// #endif
-					that.popular_comments = res.data.popular_comments // 评论
-
-					that.summarStatu = true
-					if (res.data.videos[0]) {
-						that.isVideosLook = true
-						that.movieUrl = res.data.videos[0].sample_link
-					} else {
-						that.isVideosLook = false
-					}
+					that.popular_comments = res.data.short_comment // 评论
+					// 随机使用静态资源头像
+					that.avatar = "~@/static/avatar/" +  Math.floor( Math.random()*9 ) + '.jpg'
+					console.log(that.avatar, 'that.avatar')
+					// that.summarStatu = true
+					// if (res.data.videos[0]) {
+					// 	that.isVideosLook = true
+					// 	that.movieUrl = res.data.videos[0].sample_link
+					// } else {
+					// 	that.isVideosLook = false
+					// }
 				}
 			})
 		},
@@ -216,7 +186,7 @@
 				durations: '', // 片长
 				viewBg: '', // 背景img
 				viewTitle: '', // 电影title
-				viewBanner: {}, //电影封面
+				viewBanner: '', //电影封面
 				summary: '', // 剧情简介
 				casts: [], // 演员
 				directors: [], // 导演
@@ -228,6 +198,7 @@
 				popular_comments: [], // 精选评论
 				isVideosLook: false, // 是否可以观看
 				showText: false, // 展开收起
+				avatar: '' // 静态头像
 			}
 		},
 		methods: {

@@ -24,28 +24,17 @@
 				</swiper-item>
 			</swiper>
 
-			<!-- 宫格列表 -->
-			<!-- 	<view class="cu-list grid" :class="['col-3','border']">
-				<view class="cu-item" v-for="(item,index) in cuIconList" :key="index" @click="getChart(item)">
-					<view :class="['cuIcon-' + item.cuIcon,'text-' + item.color]">
-						<view class="cu-tag badge" v-if="item.badge!=0">
-							<block v-if="item.badge!=1">{{item.badge>99?'99+':item.badge}}</block>
-						</view>
-					</view>
-					<text>{{item.name}}</text>
-				</view>
-			</view> -->
 			<!-- 电影列表 -->
 			<view class="movieH">豆瓣高分</view>
 			<view class="movieBox">
 				<view v-for="(item, index) in movieInfo" :key="index" class="movieList" @click="getDate(item)">
-					<image :src="item.images.small" class="movieImg"></image>
+					<image :src="item.cover" class="movieImg"></image>
 					<view>
 						{{ item.title | ellipsis }}
 						<view class="moiveRate">
-							<uni-rate disabled="true" :value="item.rating.average/2" size=14 active-color="#D81E06" color="#DADADA">
+							<uni-rate disabled="true" :value="item.rate/2" size=14 active-color="#D81E06" color="#DADADA">
 							</uni-rate>
-							<text class="moiveRateT">{{item.rating.average}}</text>
+							<text class="moiveRateT">{{item.rate}}</text>
 						</view>
 					</view>
 				</view>
@@ -62,6 +51,7 @@
 	import uniListItem from "@/components/uni-list-item/uni-list-item.vue"
 	import uniLoadMore from "@/components/uni-load-more/uni-load-more.vue" // 加载更多
 	import miLoading from '../../components/mi-loading/mi-loading.vue' // loading动画
+	let interstitialAd = null
 	export default {
 		components: {
 			uniList,
@@ -97,23 +87,40 @@
 			console.log('触底’')
 			this.getmorenews()
 		},
+		onLoad() {
+		   if (wx.createInterstitialAd) {
+		     interstitialAd = wx.createInterstitialAd({
+		       adUnitId: 'adunit-a795800b9c1da8c9'
+		     })
+		     interstitialAd.onLoad(() => {})
+		     interstitialAd.onError((err) => {})
+		     interstitialAd.onClose(() => {})
+		   }
+		   
+		   // 在适合的场景显示插屏广告
+		   if (interstitialAd) {
+		     interstitialAd.show().catch((err) => {
+		       console.error(err)
+		     })
+		   }
+		  },
 		mounted() {
+			
 			setTimeout(() => {
 				this.$refs.loading.show() // 打开
 			}, 10)
 			uni.request({
-				url: 'https://api.douban.com/v2/movie/top250',
+				url: 'https://movie.douban.com/j/search_subjects',
 				header: {
 					"Content-Type": "application/text",
 				},
 				data: {
-					// type: 'movie',
-					// tag: '喜剧',
+					type: 'movie',
+					tag: '喜剧',
 					sort: 'recommend',
-					count: 6,
-					start: 0,
-					playable: 'on',
-					apikey: '0df993c66c0c636e29ecbb5344252a4a'
+					page_limit: 6,
+					page_start: 0,
+					playable: 'on'
 				},
 				success: (res) => {
 					this.$refs.loading.hide() // 关闭
@@ -207,7 +214,7 @@
 				}
 				that.listStatus = 'loading'
 				uni.request({
-					url: 'https://api.douban.com/v2/movie/top250',
+					url: 'https://movie.douban.com/j/search_subjects',
 					method: 'GET',
 					header: {
 						"Content-Type": "application/text",
@@ -215,16 +222,16 @@
 
 					},
 					data: {
-						// type: 'movie',
-						// tag: '喜剧',
+						type: 'movie',
+						tag: '喜剧',
 						sort: 'recommend',
-						count: 6,
-						start: that.pageNum * 6,
-						playable: 'on',
-						apikey: '0df993c66c0c636e29ecbb5344252a4a'
+						page_limit: 6,
+						page_start: that.pageNum * 6,
+						playable: 'on'
 					},
 					success: function(res) {
 						that.pageNum++;
+						console.log(that.pageNum)
 						console.log(res);
 						that.movieInfo = that.movieInfo.concat(res.data.subjects);
 						that.listStatus = 'loading'
@@ -260,7 +267,7 @@
 			getDate(item) {
 				uni.setStorage({
 					key: 'storage_bg',
-					data: item.images.small,
+					data: item.cover,
 					success: function() {
 						console.log('item.images.small');
 					}
